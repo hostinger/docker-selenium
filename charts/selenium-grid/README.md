@@ -69,6 +69,7 @@ This table contains the configuration parameters of the chart and their default 
 | `ingress.path`                          | `/`                                | Default path for ingress resource                                                                             |
 | `busConfigMap.annotations`              | `{}`                               | Custom annotations for configmap                                                                                           |
 | `chromeNode.enabled`                    | `true`                             | Enable chrome nodes                                                                                                        |
+| `chromeNode.deploymentEnabled`          | `true`                             | Enable creation of Deployment for chrome nodes                                                                             |
 | `chromeNode.replicas`                   | `1`                                | Number of chrome nodes                                                                                                     |
 | `chromeNode.imageName`                  | `selenium/node-chrome`             | Image of chrome nodes                                                                                                      |
 | `chromeNode.imageTag`                   | `4.5.3-20221024`                   | Image of chrome nodes                                                                                                      |
@@ -102,6 +103,7 @@ This table contains the configuration parameters of the chart and their default 
 | `chromeNode.automountServiceAccountToken`| `false`                           | Determines automounting of service account token |
 | `chromeNode.serviceAccount`             | ``                                 | Service account for chrome container |
 | `firefoxNode.enabled`                   | `true`                             | Enable firefox nodes                                                                                                       |
+| `firefoxNode.deploymentEnabled`         | `true`                             | Enable creation of Deployment for firefox nodes                                                                            |
 | `firefoxNode.replicas`                  | `1`                                | Number of firefox nodes                                                                                                    |
 | `firefoxNode.imageName`                 | `selenium/node-firefox`            | Image of firefox nodes                                                                                                     |
 | `firefoxNode.imageTag`                  | `4.5.3-20221024`                   | Image of firefox nodes                                                                                                     |
@@ -135,6 +137,7 @@ This table contains the configuration parameters of the chart and their default 
 | `firefoxNode.automountServiceAccountToken`| `false`                           | Determines automounting of service account token |
 | `firefoxNode.serviceAccount`             | ``                                 | Service account for firefox container |
 | `edgeNode.enabled`                      | `true`                             | Enable edge nodes                                                                                                          |
+| `edgeNode.deploymentEnabled`            | `true`                             | Enable creation of Deployment for edge nodes                                                                               |
 | `edgeNode.replicas`                     | `1`                                | Number of edge nodes                                                                                                       |
 | `edgeNode.imageName`                    | `selenium/node-edge`               | Image of edge nodes                                                                                                        |
 | `edgeNode.imageTag`                     | `4.5.3-20221024`                   | Image of edge nodes                                                                                                        |
